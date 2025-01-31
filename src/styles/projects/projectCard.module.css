@@ -1,0 +1,37 @@
+.outerContainer {
+    height: 25em;
+    width: 40em;
+    border: var(--dashed-border);
+    background-color: var(--dark-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outerContainer, 
+.innerContainer {
+    transition: border .3s ease-in-out,
+        box-shadow .3s ease-in-out;
+}
+
+.innerContainer {
+    border: var(--dashed-border);
+    width: 98%;
+    height: 97%;
+    color: var(--text-color);
+}
+
+
+.cardHeader h3 {
+    color: var(--text-color);
+}
+
+.outerContainer:hover {
+    border: var(--dashed-glow-border);
+    box-shadow: var(--shadow-glow);
+}
+
+.outerContainer:hover > .innerContainer {
+    border: var(--dashed-glow-border);
+    box-shadow: var(--shadow-glow);
+}

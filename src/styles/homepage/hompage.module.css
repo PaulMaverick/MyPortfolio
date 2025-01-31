@@ -1,0 +1,141 @@
+:root {
+    --char-speed: 50ms; /* Time per character */
+    --type-speed: calc(var(--steps) * var(--char-speed)); 
+    --blink-speed: 750ms;
+    --steps: 11;
+    
+}
+
+.container {
+    flex-grow: 1;
+    position: relative;
+}
+
+.textContainer {
+    background-color: var(--dark-bg);
+    border-top: var(--dashed-border);
+    border-bottom: var(--dashed-border);
+    padding: 2em;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    font-family: var(--Major-Mono-font);
+    color: var(--text-color);
+}
+
+.textContainer h1 {
+    font-size: 5em;
+}
+
+.textContainer h5 {
+    font-size: 1em;
+}
+
+.textContainer h2 {
+    font-size: 1.5em;
+}
+
+.textContainer > h1, 
+.textContainer > h2, 
+.textContainer > h5 {
+    position: relative;
+}
+
+
+.textContainer > h5::before,
+.textContainer > h5::after,
+.textContainer > h1::before,
+.textContainer > h1::after,
+.textContainer > h2::before,
+.textContainer > h2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.textContainer > h1::before,
+.textContainer > h2::before,
+.textContainer > h5::before {
+    background-color: var(--dark-bg);
+}
+
+.textContainer > h5::before {
+    animation: typewriter var(--type-speed) steps(var(--steps)) .5s forwards;
+}
+
+.textContainer > h1::before {
+    animation: typewriter var(--type-speed) steps(var(--steps)) 2.5s forwards;
+}   
+
+.textContainer > h2::before {
+    animation: typewriter var(--type-speed) steps(var(--steps)) 4.5s forwards;
+}
+
+.textContainer > h5::after,
+.textContainer > h1::after,
+.textContainer > h2::after {
+    width: 0.350em;
+    height: inherit;
+    background-color: var(--text-color);
+    
+}
+
+.textContainer > h5::after {
+    opacity: 1;
+    animation: 
+            typewriter var(--type-speed) steps(var(--steps)) .5s forwards,
+            blink var(--blink-speed) steps(var(--steps)) .5s infinite,
+            hide 0.1s ease-in 2.5s forwards;
+}
+
+.textContainer > h1::after {
+    opacity: 0;
+    animation: 
+            show 0.1s ease-in 2.5s forwards,
+            typewriter var(--type-speed) steps(var(--steps)) 2.5s forwards,
+            blink var(--blink-speed) steps(var(--steps)) 2.5s infinite,
+            hide 0.1s ease-in 4.3s forwards;
+}
+
+.textContainer > h2::after {
+    opacity: 0;
+    animation: 
+            show 0.1s ease-in 4.5s forwards,
+            typewriter var(--type-speed) steps(var(--steps)) 4.5s forwards,
+            blink var(--blink-speed) steps(var(--steps)) 4.5s infinite,
+            hide 0.1s ease-in 5.5s forwards;
+}
+
+
+
+@keyframes typewriter {
+    to { left: 100%;}
+}
+
+@keyframes blink {
+    to {
+        background-color: transparent;
+    }
+}
+
+@keyframes show {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    to {
+        opacity: 0
+    }
+}

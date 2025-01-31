@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&');
+
+:root {
+        /* colors */
+        --text-color: #58ce35;
+        --text-glow: #0aff33;
+        --text-glow-shadow: rgba(60, 255, 0, 0.5);
+        --dark-bg: rgba(0,0,0,255);
+    
+        /* fonts */
+        --Major-Mono-font: "Major Mono Display", serif;   
+
+        /* borders */
+        --dashed-border: 2px dashed var(--text-color);
+        --double-border: thick double var(--text-color);
+        --dashed-glow-border: 2px dashed var(--text-glow);
+        --double-glow-border: 2px double var(--text-glow);
+
+        /* box shadows */
+        --shadow-glow: 0 0 5px var(--text-glow);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--dark-bg);
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-glow);
+}
