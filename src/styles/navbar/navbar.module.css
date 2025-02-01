@@ -13,9 +13,15 @@
 
 .brandContainer {
     cursor: pointer;
-    transition: color .5s ease-in-out;
+    
 }
 
-.brandContainer:hover {
+.brandLink:hover {
     color: var(--text-glow)
+}
+
+.brandLink {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color .5s ease-in-out;
 }

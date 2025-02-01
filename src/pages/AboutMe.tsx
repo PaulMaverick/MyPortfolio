@@ -10,6 +10,14 @@ export default function AboutMe() {
         setActiveComponent(name);
     }
 
+    const expStyle = {
+        color: activeComponent === 'experience' ? "#0aff33" : "#58ce35"
+    }
+
+    const personalStyle = {
+        color: activeComponent === 'personal' ? "#0aff33" : "#58ce35"
+    }
+
     return (
         <section className={styles.aboutContainer}>
             <article className={styles.aboutArticle}>
@@ -18,8 +26,12 @@ export default function AboutMe() {
                 </header>
                 <div className={styles.aboutContent}>
                     <div className={styles.aboutMeBar}>
-                        <p onClick={() => handleCompChange('experience')}> =&gt;Experience</p>
-                        <p onClick={() => handleCompChange('personal')}> =&gt;Personal Info</p>
+                        <p 
+                            style={expStyle}
+                            onClick={() => handleCompChange('experience')}> =&gt;Experience</p>
+                        <p 
+                            style={personalStyle}
+                            onClick={() => handleCompChange('personal')}> =&gt;Personal Info</p>
                     </div>
                     <div className={styles.aboutComponents}>
                         { activeComponent === 'experience' ? <Experiences /> : <></>}
