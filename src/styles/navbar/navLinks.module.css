@@ -9,8 +9,7 @@
 }
 
 .link {
-    font-size: .8em;
-    color: var(--text-color);
+    font-size: .9em;
     text-decoration: none;
     transition: color .3s ease-in-out;
 }
