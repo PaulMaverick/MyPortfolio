@@ -1,0 +1,35 @@
+.expHeader {
+    padding: 1em 1em 1em 0;
+    font-family: var(--Major-Mono-font);
+
+}
+
+.expItem {
+    margin-bottom: 2em;
+    padding: 1em;
+    border-top: var(--dashed-border);
+    border-bottom: var(--dashed-border);
+    font-family: var(--chakra-font);
+}
+
+.expItem:last-child {
+    margin-bottom: 0;
+}
+
+.itemHeader {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: .2em;
+}
+
+.itemCompany {
+    font-size: 1.3em;
+    margin-bottom: .5em;
+}
+
+.descList {
+    padding-left: 2em;
+    line-height: 2em;
+}

@@ -1,0 +1,50 @@
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1em;
+    height: calc(100vh - 4em);
+    overflow-y: scroll;
+}
+
+.aboutArticle {
+    background-color: var(--dark-bg);
+    margin-top: 2em;
+    border: var(--dashed-border);
+    color: var(--text-color);
+    height: max-content;
+    width: 95%;
+}
+
+.aboutArticle > header {
+    text-align: center;
+    padding: 1em;
+    border-bottom: var(--dashed-border);
+    font-family: var(--Major-Mono-font);
+}
+
+.headerH1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.aboutMeBar {
+    padding: 1em;
+    font-family: var(--Major-Mono-font);
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    border-bottom: var(--dashed-border);
+}
+
+.aboutMeBar > p {
+    cursor: pointer;
+}
+
+.aboutMeBar > p:hover {
+    color: var(--text-glow);
+}
+
+.aboutComponents {
+    padding: 2em;
+}

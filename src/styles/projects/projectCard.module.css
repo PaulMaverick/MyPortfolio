@@ -19,7 +19,7 @@
     width: 98%;
     height: 97%;
     color: var(--text-color);
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 

@@ -40,28 +40,6 @@
         }],
         "site_link": "",
         "github_link": "https://github.com/PaulMaverick/XReact"
-    },
-    {
-        "id": 4,
-        "name": "Sticker Pic4",
-        "description": "This si a description",
-        "techs": [{
-            "id": 0,
-            "techName": "React-Native"
-        }],
-        "site_link": "",
-        "github_link": ""
-    },
-    {
-        "id": 5,
-        "name": "Sticker Pic4",
-        "description": "This si a description",
-        "techs": [{
-            "id": 0,
-            "techName": "React-Native"
-        }],
-        "site_link": "",
-        "github_link": ""
     }
 ]
 

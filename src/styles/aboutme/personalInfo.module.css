@@ -1,0 +1,48 @@
+.personalHeader {
+    padding: 0 1em .5em 0;
+    border-bottom: var(--dashed-border);
+    font-family: var(--Major-Mono-font);
+    margin-bottom: 1em;
+}
+
+.personalInfo {
+    padding: 0 0 1em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-bottom: var(--dashed-border);
+    font-family: var(--Chakra-font);
+}
+
+.personalInfo a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.techContent {
+    font-family: var(--Chakra-font);
+}
+
+.techContent > h3 {
+    padding: 1em;
+    border-bottom: var(--dashed-border);
+    
+}
+
+.upperTech, .lowerTech {
+    padding: 1em;
+    display: flex;
+    gap: 3em;
+}
+
+.techGroup > h5 {
+    font-size: 1em;
+}
+
+.techGroup > ul {
+    padding-left: 1.5em;
+}
+
+.techGroup > ul > li {
+    list-style: none;
+}

@@ -5,6 +5,7 @@ import styles from './styles/App.module.css'
 import { Routes, Route } from 'react-router'
 
 import RainingMatrix from "./components/visual/RainingMatrix"
+import AboutMe from './pages/AboutMe'
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path='/' element={<HomePage />}/>
             <Route path='/projects' element={<Projects />}/>
+            <Route path='/aboutme' element={<AboutMe />}/>
           </Routes>
         </div>
     </main>
