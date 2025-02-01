@@ -1,9 +1,14 @@
 :root {
     --char-speed: 50ms; /* Time per character */
-    --type-speed: calc(var(--steps) * var(--char-speed)); 
+    --type-speed-h1: calc(var(--steps-h1) * var(--char-speed)); 
+    --type-speed-h2: calc(var(--steps-h2) * var(--char-speed)); 
+    --type-speed-h5: calc(var(--steps-h5) * var(--char-speed)); 
+    --type-speed-btns: calc(var(--steps-btns) * var(--char-speed));
     --blink-speed: 750ms;
-    --steps: 11;
-    
+    --steps-h5: 11;
+    --steps-h1: 13;
+    --steps-h2: 38;
+    --steps-btns: 5;
 }
 
 .container {
@@ -70,15 +75,15 @@
 }
 
 .textContainer > h5::before {
-    animation: typewriter var(--type-speed) steps(var(--steps)) .5s forwards;
+    animation: typewriter var(--type-speed-h5) steps(var(--steps-h5)) .2s forwards;
 }
 
 .textContainer > h1::before {
-    animation: typewriter var(--type-speed) steps(var(--steps)) 2.5s forwards;
+    animation: typewriter var(--type-speed-h1) steps(var(--steps-h1)) 1.5s forwards;
 }   
 
 .textContainer > h2::before {
-    animation: typewriter var(--type-speed) steps(var(--steps)) 4.5s forwards;
+    animation: typewriter var(--type-speed-h2) steps(var(--steps-h2)) 2.5s forwards;
 }
 
 .textContainer > h5::after,
@@ -87,35 +92,54 @@
     width: 0.350em;
     height: inherit;
     background-color: var(--text-color);
-    
 }
 
 .textContainer > h5::after {
     opacity: 1;
     animation: 
-            typewriter var(--type-speed) steps(var(--steps)) .5s forwards,
-            blink var(--blink-speed) steps(var(--steps)) .5s infinite,
-            hide 0.1s ease-in 2.5s forwards;
+            typewriter var(--type-speed-h5) steps(var(--steps-h5)) .2s forwards,
+            blink var(--blink-speed) steps(var(--steps-h5)) .5s infinite,
+            hide 0.1s ease-in 1s forwards;
 }
 
 .textContainer > h1::after {
     opacity: 0;
     animation: 
-            show 0.1s ease-in 2.5s forwards,
-            typewriter var(--type-speed) steps(var(--steps)) 2.5s forwards,
-            blink var(--blink-speed) steps(var(--steps)) 2.5s infinite,
-            hide 0.1s ease-in 4.3s forwards;
+            show 0.1s ease-in 1.3s forwards,
+            typewriter var(--type-speed-h1) steps(var(--steps-h1)) 1.5s forwards,
+            blink var(--blink-speed) steps(var(--steps-h1)) 1.5s infinite,
+            hide 0.1s ease-in 2.3s forwards;
 }
 
 .textContainer > h2::after {
     opacity: 0;
     animation: 
-            show 0.1s ease-in 4.5s forwards,
-            typewriter var(--type-speed) steps(var(--steps)) 4.5s forwards,
-            blink var(--blink-speed) steps(var(--steps)) 4.5s infinite,
-            hide 0.1s ease-in 5.5s forwards;
+            show 0.1s ease-in 2.4s forwards,
+            typewriter var(--type-speed-h2) steps(var(--steps-h2)) 2.5s forwards,
+            blink var(--blink-speed) steps(var(--steps-h2)) 2.5s infinite,
+            hide 0.1s ease-in 4.5s forwards;
 }
 
+.buttons {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    max-width: max-content;
+    position: relative;
+}
+
+.buttons a {
+    font-size: 1.5em;
+    opacity: 0;
+    color: var(--text-color);
+    cursor: pointer;
+    animation: fadein .5s ease-in 4.7s forwards;
+}
+
+@keyframes fadein {
+    to { opacity: 1;}
+}
 
 
 @keyframes typewriter {
