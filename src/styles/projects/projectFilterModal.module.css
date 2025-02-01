@@ -1,0 +1,45 @@
+.modalContainer {
+    position: absolute;
+    top: 1em;
+    max-height: max-content;
+    left: 5em;
+    width: 20em;
+    border: var(--double-border);
+    background-color: var(--dark-bg);
+    border-radius: .5em;
+    overflow: hidden;
+}
+
+.modalHeader h3 {
+    color: var(--text-color);
+    text-align: center;
+    padding: 1em;
+    border-bottom: var(--double-border);
+}
+
+.modalContent {
+    padding: 1em;
+}
+
+.checkboxContainer {
+    color: var(--text-color);
+    margin-bottom: 1em;
+}
+
+.checkboxContainer label {
+    margin-left: 1em;
+}
+
+.checkboxContainer input[type="checkbox"] {
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+}
+
+.checkboxContainer input[type="checkbox"]:checked {
+    background-color: var(--text-glow);
+}

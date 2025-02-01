@@ -2,40 +2,44 @@
     {
         "id": 0,
         "name": "Sticker Pic",
-        "description": "This si a description",
-        "techs": [ {"id": 0, "techName": "react-native"}],
+        "description": "A basic app for adding stickers to pic using libraries such as expo-image-picker and learning to use basic concepts of gestures, Screens, Tabs.",
+        "techs": [ {"id": 0, "techName": "React-Native"}, {"id": 1, "techName": "Expo Go"}],
         "site_link": "",
-        "github_link": ""
+        "github_link": "https://github.com/PaulMaverick/StickerPic"
     },
     {
         "id": 1,
-        "name": "Sticker Pic",
-        "description": "This si a description",
-        "techs": [ {"id": 0, "techName": "react-native"}],
+        "name": "NativeToDo",
+        "description": "***Plan to further add more features*** A personal Todo project with react native, Expo Go. Was made in order to learn more about react native, and to have a personal todo app with features such push notifications, more detailed todos.",
+        "techs": [ 
+            {"id": 0, "techName": "React-Native"}, 
+            {"id": 1, "techName": "Expo Go"},
+            {"id": 2, "techName": "Redux"}
+        ],
         "site_link": "",
-        "github_link": ""
+        "github_link": "https://github.com/PaulMaverick/NativeToDo"
     },
     {
         "id": 2,
-        "name": "Name2",
-        "description": "This si a description",
+        "name": "Soft Engine",
+        "description": "***Plan to further add more features*** Using CPU to build graphics using Javascript and HTML Canvas to learn old school graphics algorithims that has been used by modern 3D engines and learn more about javascript Learned HTML canvas, matrices, WorldViewProjection Matrix, back-buffering, rendering Loops, Bresenham Line Algo, Rasterization, and shadings. This project was made with the help of David Rousset's Blog regarding 3D soft Engines.",
         "techs": [{
             "id": 0,
-            "techName": "react-native"
+            "techName": "Javascript"
         }],
-        "site_link": "",
-        "github_link": ""
+        "site_link": "https://paulmaverick.github.io/SoftEngine/",
+        "github_link": "https://github.com/PaulMaverick/SoftEngine"
     },
     {
         "id": 3,
-        "name": "Sticker Pic3",
-        "description": "This si a description",
+        "name": "XReact",
+        "description": "React.js is a custom implementation of React, built to better understand how React works under the hood. This project covers essential concepts like rendering DOM elements, virtual DOM, reconciliation, components, state, and hooks.",
         "techs": [{
             "id": 0,
-            "techName": "react-native"
+            "techName": "Javascript"
         }],
         "site_link": "",
-        "github_link": ""
+        "github_link": "https://github.com/PaulMaverick/XReact"
     },
     {
         "id": 4,
@@ -43,7 +47,7 @@
         "description": "This si a description",
         "techs": [{
             "id": 0,
-            "techName": "react-native"
+            "techName": "React-Native"
         }],
         "site_link": "",
         "github_link": ""
@@ -54,7 +58,7 @@
         "description": "This si a description",
         "techs": [{
             "id": 0,
-            "techName": "react-native"
+            "techName": "React-Native"
         }],
         "site_link": "",
         "github_link": ""

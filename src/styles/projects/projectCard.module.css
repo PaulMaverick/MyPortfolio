@@ -19,8 +19,58 @@
     width: 98%;
     height: 97%;
     color: var(--text-color);
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
+.cardHeader {
+    padding: 1em;
+    border-bottom: var(--dashed-border);
+    font-family: var(--Major-Mono-font);
+    font-weight: bold;
+}
+
+.cardContent {
+    padding: 1em 1em;
+    line-height: 2em;
+    font-family: var(--Chakra-font);
+}
+
+.cardDesc {
+    font-size: 1em;
+}
+
+.techStack {
+    font-weight: bold;
+}
+
+.cardContent ul {
+    padding: 0 2em;
+    list-style: none;
+}
+
+.cardButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.btnLink {
+    padding: .5em 1em;
+    font-family: var(--Chakra-font);
+    border: var(--dashed-border);
+    background-color: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color .5s ease-in-out, 
+    border .5s ease-in-out;
+    font-size: .8em;
+}
+
+
+/* hovers */
 
 .cardHeader h3 {
     color: var(--text-color);
@@ -35,3 +85,13 @@
     border: var(--dashed-glow-border);
     box-shadow: var(--shadow-glow);
 }
+
+.btnLink:hover {
+    border: var(--dashed-glow-border);
+    color: var(--text-glow);
+}
+
+
+
+
+
