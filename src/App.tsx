@@ -4,13 +4,13 @@ import Projects from './pages/Projects'
 import styles from './styles/App.module.css'
 import { Routes, Route } from 'react-router'
 
-import RainingMatrix from "./components/visual/RainingMatrix"
+
 import AboutMe from './pages/AboutMe'
 
 function App() {
     return (
     <main>
-        <RainingMatrix />
+        
         <NavBar />
         <div className={styles.appContent}>
           <Routes>

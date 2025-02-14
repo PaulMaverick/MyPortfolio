@@ -2,6 +2,7 @@ import styles from '../styles/homepage/hompage.module.css'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFileAlt } from "react-icons/fa";
+import RainingMatrix from "../components/visual/RainingMatrix"
 
 
 
@@ -9,6 +10,7 @@ import { FaFileAlt } from "react-icons/fa";
 export default function HomePage() {
     return (
         <section className={styles.container}>
+            <RainingMatrix />
             <article className={styles.textContainer}>
                 <h5>Hello I'm a </h5>
                 <h1>Web Developer</h1>
