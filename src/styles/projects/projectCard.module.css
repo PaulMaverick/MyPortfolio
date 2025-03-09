@@ -1,96 +1,102 @@
-.outerContainer {
-    height: 25em;
-    width: 40em;
-    border: var(--dashed-border);
-    background-color: var(--dark-bg);
+.container {
+   width: 90%;
+   height: fit-content;
+   box-shadow: 5px 5px 7px 3px gray;
+   border-radius: 1em;
+   overflow: hidden;
+}
+
+.imgContainer {
+    height: 15em;
+    width: 100%;
+}
+
+.imgContainer img {
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.content > header > h4 {
+    text-align: left;
+    font-size: 1em;
+    color: var(--blue-color);
+}
+
+.content > p {
+    font-family: var(--Chakra-font);
+    font-size: .9em;
+}
+
+.projectLink {
+    background-color: var(--blue-color);
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.outerContainer, 
-.innerContainer {
-    transition: border .3s ease-in-out,
-        box-shadow .3s ease-in-out;
-}
-
-.innerContainer {
-    border: var(--dashed-border);
-    width: 98%;
-    height: 97%;
-    color: var(--text-color);
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-.cardHeader {
-    padding: 1em;
-    border-bottom: var(--dashed-border);
-    font-family: var(--Major-Mono-font);
-    font-weight: bold;
-}
-
-.cardContent {
-    padding: 1em 1em;
-    line-height: 2em;
-    font-family: var(--Chakra-font);
-}
-
-.cardDesc {
-    font-size: 1em;
-}
-
-.techStack {
-    font-weight: bold;
-}
-
-.cardContent ul {
-    padding: 0 2em;
-    list-style: none;
-}
-
-.cardButtons {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-}
-
-.btnLink {
-    padding: .5em 1em;
-    font-family: var(--Chakra-font);
-    border: var(--dashed-border);
-    background-color: transparent;
-    color: var(--text-color);
-    cursor: pointer;
     text-decoration: none;
-    color: var(--text-color);
-    transition: color .5s ease-in-out, 
-    border .5s ease-in-out;
-    font-size: .8em;
+    color: white;
+    border-radius: 1em;
 }
 
 
-/* hovers */
+@media (min-width: 650px) {
+    .container {
+        width: 500px;
+        height: fit-content;
+        box-shadow: 5px 5px 7px 3px gray;
+        border-radius: 1em;
+        overflow: hidden;
+     }
 
-.cardHeader h3 {
-    color: var(--text-color);
+     .imgContainer {
+        height: 20em;
+        width: 100%;
+    }
+
+    .content > p {
+        font-family: var(--Chakra-font);
+        font-size: 1.2em;
+    }
+
+    .content > header > h4 {
+        font-size: 1.5em;
+    }
+    
 }
 
-.outerContainer:hover {
-    border: var(--dashed-glow-border);
-    box-shadow: var(--shadow-glow);
-}
+@media (min-width: 1000px) {
+    .container {
+        width: 500px;
+        height: fit-content;
+        box-shadow: 5px 5px 7px 3px gray;
+        border-radius: 1em;
+        overflow: hidden;
+     }
 
-.outerContainer:hover > .innerContainer {
-    border: var(--dashed-glow-border);
-    box-shadow: var(--shadow-glow);
-}
+     .imgContainer {
+        height: 20em;
+        width: 100%;
+    }
+    
 
-.btnLink:hover {
-    border: var(--dashed-glow-border);
-    color: var(--text-glow);
-}
+    .content > p {
+        font-family: var(--Chakra-font);
+        font-size: 1.3em;
+    }
 
+    .content > header > h4 {
+        font-size: 1.5em;
+    }
+}
 
 
 

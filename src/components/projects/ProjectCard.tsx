@@ -1,43 +1,28 @@
+import { ReactNode } from 'react';
 import styles from '../../styles/projects/projectCard.module.css'
-import { projectType } from '../../types'
+import { Link } from 'react-router-dom';
 
 type Props = {
-    item: projectType
+    title: string;
+    imgSrc: string;
+    link: string;
+    children: ReactNode
 }
 
-export default function ProjectCard({item}: Props) {
+export default function ProjectCard({title, imgSrc, link, children}: Props) {
     return (
-        <article className={styles.outerContainer}>
-            <div className={styles.innerContainer}>
-                <header className={styles.cardHeader}>
-                    <h3>{item.name}</h3>
-                </header>
-                <div className={styles.cardContent}>
-                    <div className={styles.cardDesc}>{item.description}</div>
-                    <div className={styles.techStack}>Tech Stack:</div>
-                    <ul>
-                        {item.techs.map(tech => (
-                            <li key={tech.id}>{`=> ${tech.techName}`}</li>
-                        ))}
-                    </ul>
-                </div>
-                <div className={styles.cardButtons}>
-                    {item.site_link ? (
-                        <a 
-                        href={item.site_link} 
-                        target='_blank' 
-                        rel='noopener noreferrer'
-                        className={styles.btnLink}>Site Link</a>
-                    ): (<></>)}
-                    {item.github_link ? (
-                        <a 
-                        href={item.github_link} 
-                        target='_blank' 
-                        rel='noopener noreferrer'
-                        className={styles.btnLink}>Github Link</a>
-                    ): (<></>)}
-                </div>
+        <article className={styles.container}>
+            <div className={styles.imgContainer}>
+                <img src={imgSrc} alt="project Image" />
             </div>
+            <div className={styles.content}>
+                <header className={styles.cardHeader}>
+                    <h4>{title}</h4>
+                </header>
+                {children}
+                <Link to={link} className={styles.projectLink}>Read More</Link>
+            </div>
+
         </article>
     )
 }

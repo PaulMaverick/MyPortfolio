@@ -1,0 +1,80 @@
+
+.textContainer {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    border-bottom: 1px solid var(--blue-color);
+    padding: 3em 0;
+}
+
+.innerContainer {
+    font-family: var(--Chakra-font);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    position: relative;
+}
+
+.innerContainer h1 {
+    font-size: 2em;
+    font-family: var(--Major-Mono-font);
+    color: var(--blue-color);
+}
+
+.innerContainer h5 {
+    font-size: 1em;
+    
+}
+
+.innerContainer h2 {
+    font-size: 1em;
+}
+
+.buttons {
+    padding: .5em;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.buttons a {
+    color: black;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.buttons a:hover {
+    color: var(--blue-color);
+}
+
+@media (min-width: 700px) {
+    
+    .textContainer {
+        padding: 5em 0;
+    }
+
+    .innerContainer h1 {
+        font-size: 4em;
+        
+    }
+    
+    .innerContainer h5 {
+        font-size: 1.5em;
+        
+    }
+    
+    .innerContainer h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    .textContainer {
+        padding: 10em 0;
+    }
+
+   
+}

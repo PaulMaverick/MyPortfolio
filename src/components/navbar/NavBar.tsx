@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import styles from '../../styles/navbar/navbar.module.css'
-import NavLinks from './NavLinks'
 
 export default function NavBar() {
     return (
@@ -8,7 +7,8 @@ export default function NavBar() {
             <div className={styles.brandContainer}>
                 <Link to="/" className={styles.brandLink}>Paul Pastor</Link>
             </div>
-            <NavLinks />
+
+            <Link to='/aboutme' className={styles.link}>About Me</Link>
         </header>
     )
 }

@@ -1,50 +1,57 @@
 .aboutContainer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
     padding: 1em;
-    height: calc(100vh - 4em);
-    overflow-y: scroll;
-}
-
-.aboutArticle {
-    background-color: var(--dark-bg);
-    margin-top: 2em;
-    border: var(--dashed-border);
-    color: var(--text-color);
-    height: max-content;
-    width: 95%;
-}
-
-.aboutArticle > header {
-    text-align: center;
-    padding: 1em;
-    border-bottom: var(--dashed-border);
-    font-family: var(--Major-Mono-font);
 }
 
 .headerH1 {
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.aboutMeBar {
-    padding: 1em;
+    text-align: center;
     font-family: var(--Major-Mono-font);
+    color: var(--blue-color);
+    padding: 1em;
+    border-bottom: 1px solid var(--blue-color);
+}
+
+.navContainer {
     display: flex;
-    align-items: center;
-    gap: 3em;
-    border-bottom: var(--dashed-border);
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid var(--blue-color);
 }
 
-.aboutMeBar > p {
+.navLink {
     cursor: pointer;
+    font-family: var(--Major-Mono-font);
+    font-size: .7em;
+    color: var(--blue-color);
 }
 
-.aboutMeBar > p:hover {
-    color: var(--text-glow);
+@media (min-width: 700px) {
+    .aboutContainer {
+        padding: 1em 5em;
+    }
+
+    .navContainer {
+        padding: 1em 5em;
+        
+    }
+
+    .navLink {
+        font-size: 1em;
+    }
+    
 }
 
-.aboutComponents {
-    padding: 2em;
+@media (min-width: 1000px) {
+    .aboutContainer {
+        padding: 1em 5em;
+    }
+
+    .navContainer {
+        justify-content: center;
+        gap: 4em;
+    }
+
+    .navLink {
+        font-size: 1.2em;
+    }
+    
 }

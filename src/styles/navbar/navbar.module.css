@@ -1,27 +1,40 @@
 .container {
     height: 4em;
-    border-bottom: var(--double-border);
+    box-shadow: 5px 0 10px 5px gray;
     font-family: var(--Major-Mono-font);
-    color: var(--text-color);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 1em;
-    gap: 5em;
     min-height: 4em;
-    background-color: var(--dark-bg);
-}
-
-.brandContainer {
-    cursor: pointer;
-    
-}
-
-.brandLink:hover {
-    color: var(--text-glow)
 }
 
 .brandLink {
+    cursor: pointer;
+    color: var(--blue-color);
+    text-decoration: none;  
+}
+
+.link {
+    color: var(--blue-color);
     text-decoration: none;
-    color: var(--text-color);
-    transition: color .5s ease-in-out;
+    cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+    .container {
+        padding: 0 3em;
+    }
+    .brandLink {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        padding: 0 4em;
+    }
+    .brandLink {
+        font-size: 1.5em;
+    }
 }

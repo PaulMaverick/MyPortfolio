@@ -1,0 +1,55 @@
+.currencyContainer {
+    padding: 3em 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+}
+
+.currencyHeader {
+    text-align: center;
+    font-family: var(--Major-Mono-font);
+    font-size: .9em;
+    color: var(--blue-color);
+    padding: 1em;
+    border-bottom: 1px solid var(--blue-color);
+}
+
+.imgContainer {
+    height: 15em;
+    width: 100%;
+}
+
+.imgContainer img {
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    font-family: var(--Chakra-font);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.techList {
+    padding-left: 2em;
+}
+
+@media (min-width: 425px) {
+    
+    .imgContainer {
+        height: 20em;
+        width: 90%;
+    }
+}
+
+@media (min-width: 700px) {
+    
+    .imgContainer {
+        height: 30em;
+        max-width: 30em;
+        width: 70%;
+    }
+}

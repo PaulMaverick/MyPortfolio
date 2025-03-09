@@ -1,0 +1,88 @@
+.blogContainer {
+    padding: 3em 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+}
+
+.blogHeader {
+    text-align: center;
+    font-family: var(--Major-Mono-font);
+    font-size: .9em;
+    color: var(--blue-color);
+    padding: 1em;
+    border-bottom: 1px solid var(--blue-color);
+}
+
+.imgContainer {
+    height: 10em;
+    width: 100%;
+    align-self: center;
+}
+
+.imgContainer img {
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    font-family: var(--Chakra-font);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.techList {
+    padding-left: 2em;
+}
+
+@media (min-width: 425px) {
+    
+    .imgContainer {
+        height: 15em;
+        width: 90%;
+    }
+}
+
+@media (min-width: 700px) {
+    .blogContainer {
+        padding: 3em 4em;
+    }
+
+    .imgContainer {
+        height: 20em;
+        max-width: 60em;
+        width: 70%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .blogHeader {
+       font-size: 2em;
+    }
+    
+    .blogContainer {
+        padding: 3em 4em;
+    }
+
+    .imgContainer {
+        height: 30em;
+        max-width: 80em;
+        width: 80%;
+    }
+}
+
+@media (min-width: 1400px) {
+    
+    .blogContainer {
+        padding: 3em 6em;
+    }
+
+    .imgContainer {
+        height: 40em;
+        max-width: 80em;
+        width: 60%;
+    }
+}

@@ -6,6 +6,8 @@
         --text-glow: #0aff33;
         --text-glow-shadow: rgba(60, 255, 0, 0.5);
         --dark-bg: rgba(0,0,0,255);
+        --light-bg: rgb(255, 255, 255);
+        --blue-color: rgb(7, 134, 253);
     
         /* fonts */
         --Major-Mono-font: "Major Mono Display", serif; 
@@ -28,11 +30,11 @@
 }
 
 body {
-    background-color: var(--dark-bg);
+    background-color: var(--light-bg)
 }
 
-html {
-    scrollbar-width: 8px; /* Options: auto, thin, none */
+/* html {
+    scrollbar-width: 8px; /* Options: auto, thin, none 
     scrollbar-color: var(--text-color) var(--dark-bg);
 }
 
@@ -51,4 +53,4 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--text-glow);
-}
+} */

@@ -1,35 +1,130 @@
-.expHeader {
-    padding: 1em 1em 1em 0;
-    font-family: var(--Major-Mono-font);
+.expContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em 0;
+}
 
+.expHeader {
+    color: var(--blue-color);
+    align-self: center;
+    font-family: var(--Major-Mono-font);
+}
+
+.expContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 .expItem {
-    margin-bottom: 2em;
     padding: 1em;
-    border-top: var(--dashed-border);
-    border-bottom: var(--dashed-border);
-    font-family: var(--chakra-font);
-}
-
-.expItem:last-child {
-    margin-bottom: 0;
-}
-
-.itemHeader {
     display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    font-size: 1.5em;
-    margin-bottom: .2em;
+    flex-direction: column;
+    gap: .5em;
+    font-family: var(--Chakra-font);
+    box-shadow: 5px 5px 10px 3px gray;
+    border-radius: 1em;
+
 }
 
-.itemCompany {
-    font-size: 1.3em;
-    margin-bottom: .5em;
+.position {
+    font-weight: bold;
+    color: var(--blue-color);
+}
+
+.date {
+    font-size: .9em;
 }
 
 .descList {
-    padding-left: 2em;
-    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    list-style: circle;
+    padding-left: 1em;
+    font-size: .8em;
+}
+
+@media (min-width: 700px) {
+    .expHeader {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    
+
+    .expItem {
+        padding: 2em 1.5em;
+        gap: 1em;
+    }
+   
+    .position {
+        font-size: 1.2em;
+    }
+
+    .itemCompany {
+        font-size: 1.2em;
+    }
+    
+    .date {
+        font-size: 1em;
+    }
+    
+    .descList {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .expContainer {
+        padding: 1em 2em;
+    }
+    .expHeader {
+        font-size: 2em;
+    }
+
+    .expItem {
+        padding: 2em 1.5em;
+        gap: 1em;
+    }
+   
+    .position {
+        font-size: 1.4em;
+    }
+    
+    .date {
+        font-size: 1.2em;
+    }
+    
+    .descList {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1800px) {
+    .expContainer {
+        padding: 2em 4em;
+    }
+
+    .expHeader {
+        font-size: 2em;
+    }
+
+    .expItem {
+        padding: 2em 1.5em;
+        gap: 1em;
+    }
+   
+    .position {
+        font-size: 1.7em;
+    }
+    
+    .date {
+        font-size: 1.5em;
+    }
+    
+    .descList {
+        font-size: 1.5em;
+    }
 }

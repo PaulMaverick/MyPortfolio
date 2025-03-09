@@ -2,12 +2,12 @@
     {
         "id": 0,
         "companyName": "Zelene Technologies Inc",
-        "position": "Front End Developer",
+        "position": "Front End Developer - freelance",
         "dateRange": "April - September 2023",
         "description": [
             {   
                 "id": 0,
-                "text": "Contributed as a Front-End Developer to the development of an expense-management web application by creating 25+ pages and collaborating with UX/UI and backend teams to integrate APIs and meet business needs."
+                "text": "Worked as a front end developer to the development of an expense-management web application project by creating 25+ pages and collaborating with UX/UI and backend teams to integrate APIs and meet business needs."
             },
 
             {
@@ -24,12 +24,12 @@
     {
         "id": 1,
         "companyName": "Invo Inc.",
-        "position": "Web Developer",
+        "position": "Web Developer - freelance",
         "dateRange": "Nov 2023 - April 2024",
         "description": [
             { 
                 "id": 0,
-                "text": "Work as a Web Developer, deploying, building, and learning different frameworks to meet web standards and client demand. Use multiple frameworks in tandem to build working and up to standard websites that are used to upscale client’s businesses"
+                "text": "Work as a Web Developer, deploying, building, and learning different frameworks to for a project meet web standards and client demands. Use multiple frameworks in tandem to build working and up to standard websites that are used to upscale client’s businesses"
             },
             { 
                     "id": 1,
@@ -44,12 +44,12 @@
     {
         "id": 2,
         "companyName": "The Landmark Corporation",
-        "position": "Programmer",
+        "position": "Programmer - contract",
         "dateRange": "May 2024 - Dev 2024",
         "description": [
             { 
                 "id": 0,
-                "text": "Worked as a full-time Programmer and was responsible for creating and modifying forms and reports using PL/SQL and Oracle, meeting the operational needs of the company. Collaborating closely with team members, I have contributed to the development and refinement of over 60 forms and reports, essential for the successful launch of a new branch."},
+                "text": "Worked as a full-time Programmer for a 6 month contract and was responsible for creating and modifying forms and reports using PL/SQL and Oracle, meeting the requirements for the opening of a new branch of the company"},
 
             {
                 "id": 1,

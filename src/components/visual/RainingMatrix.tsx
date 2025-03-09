@@ -8,8 +8,8 @@ export default function RainingMatrix() {
         const canvas = canvasRef.current;
         if(canvas) {
             const ctx = canvas.getContext('2d');
-            let width =(canvas.width = window.innerWidth);
-            let heigth = (canvas.height = window.innerHeight);
+            let width =canvas.width;
+            let heigth = canvas.height;
             let columns = Math.floor(width / 20);
             const characters = 'abcdefghijklmnopqrstuvwxyz1234567890'
             const charArray = characters.split('');
@@ -24,11 +24,11 @@ export default function RainingMatrix() {
 
             const draw = () => {
                 if(ctx) {
-                    ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+                    ctx.fillStyle = 'rgb(31, 31, 31)';
                     ctx.fillRect(0, 0, width, heigth);
     
                     ctx.fillStyle = "#458d2f";
-                    ctx.font = "15px monospace"
+                    ctx.font = "5px monospace"
 
                     for(let i = 0; i < drops.length; i++) {
                         const text = charArray[Math.floor(Math.random() * charArray.length)];

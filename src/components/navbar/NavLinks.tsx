@@ -15,11 +15,6 @@ export default function NavLinks() {
         color: location.pathname === '/projects' ? '#0aff33' : '#58ce35' 
     }
 
-    const aboutMeStyle = {
-        borderBottom: location.pathname === '/aboutme' ? '1px solid #0aff33' : 'none',
-        color: location.pathname === '/aboutme' ? '#0aff33' : '#58ce35' 
-    }
-
 
     return (
         <nav className={styles.container}>
@@ -30,9 +25,7 @@ export default function NavLinks() {
                 <li >
                     <Link to='/projects' className={styles.link} style={projectStyle}>Works</Link>
                 </li>
-                <li >
-                    <Link to='/aboutme' className={styles.link} style={aboutMeStyle}>About Me</Link>
-                </li>
+                
             </ul>
         </nav>
     )
